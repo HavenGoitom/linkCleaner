@@ -30,8 +30,10 @@ async def message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     await update.message.reply_text(
-        result["resolved_url"]
-    )
+    f"🧹✨ Link cleaned!\n\n"
+    f"Here’s your fresh link:\n"
+    f"🔗 {result['resolved_url']}"
+)
 
 
 app = Application.builder().token(BOT_TOKEN).build()
