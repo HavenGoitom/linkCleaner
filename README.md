@@ -19,13 +19,14 @@ No detective work required. 🔎
 **Backend API:** https://linkcleaner.fastapicloud.dev
 
 **API Docs:** https://linkcleaner.fastapicloud.dev/docs
+
 **Telegeram bot link** https://t.me/linkCleanerHavenBot
 
 ---
 
 ## 🤖 Meet the Telegram Bot
 
-You can also send your links directly to the **LinkCleaner Telegram Bot**.
+You can also send your links directly to the **LinkCleaner Telegram Bot**:: https://t.me/linkCleanerHavenBot.
 
 Send it a supported link → it does its little cleaning magic → you get the fresh version back. 🫧
 
