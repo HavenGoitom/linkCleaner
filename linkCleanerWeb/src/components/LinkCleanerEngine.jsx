@@ -8,7 +8,7 @@ import {
 } from 'lucide-react'
 import './LinkCleanerEngine.css'
 
-const API_BASE = ''
+const API_BASE = import.meta.env.DEV ? '' : 'https://linkcleaner.fastapicloud.dev'
 
 // User-friendly error messages — no technical details exposed
 const ERROR_HINTS = {
@@ -122,6 +122,11 @@ export default function LinkCleanerEngine() {
 
       const data = response.data
 
+      // If the response is not a JSON object (e.g., an HTML page from a 404 fallback), throw an error
+      if (typeof data !== 'object' || !data) {
+        throw new Error('Invalid response from server')
+      }
+
       if (data.error) {
         setStatus('error')
         setError(ERROR_HINTS.unsupported)
@@ -177,7 +182,7 @@ export default function LinkCleanerEngine() {
     }
   }
 
-  const removedParams = result
+  const removedParams = result && result.original_url
     ? (result.original_url.split('?')[1]?.split('&').length ?? 0)
     : 0
 
