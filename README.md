@@ -19,6 +19,7 @@ No detective work required. 🔎
 **Backend API:** https://linkcleaner.fastapicloud.dev
 
 **API Docs:** https://linkcleaner.fastapicloud.dev/docs
+**Telegeram bot link** https://t.me/linkCleanerHavenBot
 
 ---
 
