@@ -1,0 +1,40 @@
+.footer {
+  position: relative;
+  z-index: 10;
+  padding: 1.25rem 2rem;
+  border-top: 1px solid rgba(80, 130, 255, 0.08);
+  backdrop-filter: blur(12px);
+  background: rgba(2, 8, 24, 0.35);
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-platforms {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.platform-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  letter-spacing: 0.02em;
+}
